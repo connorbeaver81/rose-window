@@ -1,3 +1,8 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Rose Window</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500;700&family=Alegreya+Sans:wght@400;500;700&display=swap">
 <style>
@@ -15,6 +20,7 @@
     --font-body: "Alegreya Sans", "Segoe UI", system-ui, sans-serif;
   }
   * { box-sizing: border-box; }
+  [hidden] { display: none !important; }
   html, body { height: 100%; }
   body {
     margin: 0;
@@ -134,6 +140,8 @@
   footer b { color: var(--text); font-weight: 700; }
   .buttons { display: flex; gap: 8px; }
 </style>
+</head>
+<body>
 
 <header>
   <h1>Rose Window</h1>
@@ -654,3 +662,5 @@
   if (hot && hot.ready) hot.ready(start); else start((hot && hot.data) || {});
 })();
 </script>
+</body>
+</html>
